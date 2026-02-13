@@ -1,0 +1,21 @@
+print("Проєкт: Підрахунок")
+
+n = int(input("Скільки чисел ви хочете ввести? "))
+
+a = []
+
+for i in range(n):
+    num = float(input("Число " + str(i + 1) + ": "))
+    a.append(num)
+
+sum_positive = 0
+count_negative = 0
+
+for num in a:
+    if num > 0:
+        sum_positive += num
+    elif num < 0:
+        count_negative += 1
+
+print("Сума додатних чисел:", sum_positive)
+print("Кількість відʼємних чисел:", count_negative)
